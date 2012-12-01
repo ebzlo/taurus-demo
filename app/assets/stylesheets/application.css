@@ -179,3 +179,20 @@ p {
   font-size: 11px;
   color: #bbb;
 }
+
+.status-update .form-inline {
+  display: none;
+}
+
+a.status-update {
+  padding: 8px 12px 6px;
+  border: #ccc 1px solid;
+}
+
+a.status-update:hover {
+  background-color: #fafafa;
+}
+
+div.status-update > .form-inline {
+  margin-top: 10px;
+}
