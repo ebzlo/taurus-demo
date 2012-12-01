@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Moobook - A Social Network for Cows</title>
+  <title>Moobook</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <script type="text/javascript" src="//use.typekit.net/yku3fcp.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
-<body id="landing">
+<body id="profile">
+  <div id="navigation">
+    <h1>moobook</h1>
+  </div>
   <div class="container">
     <%= yield %>
+  </div>
+  <div id="footer">
+    Lovingly crafted in Los Angeles<br />
+    &copy; Taurus <%= Time.now.year %>
   </div>
 </body>
 </html>
