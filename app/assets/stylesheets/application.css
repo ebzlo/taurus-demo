@@ -196,3 +196,37 @@ a.status-update:hover {
 div.status-update > .form-inline {
   margin-top: 10px;
 }
+
+h6 {
+  line-height: 1em !important;
+  margin: 0 0 0.4em !important;
+  font-weight: 500 !important;
+  text-transform: uppercase;
+  font-size: 27px !important;
+}
+
+#taurus-caption {
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  bottom: -300px;
+  left: 0;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #eee;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+#taurus-caption a {
+  color: #56b7fb;
+  font-weight: 700;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+#taurus-caption a:hover {
+  color: #fff;
+}
