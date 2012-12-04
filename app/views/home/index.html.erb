@@ -11,3 +11,15 @@
   <h6>Introduction</h6>
   Well hello there! So you may be wondering what this actually is. No, it's not <em>actually</em> a social network for cows. This is a mock demonstration of how a web application can really benefit from using <a href="https://taurus.io">Taurus</a>. Throughout the demonstration, I'll be chiming in with some additional details down here.
 </div>
+
+<script type="text/javascript">
+  $(function() {
+    setInterval(function() {
+      if (window.Taurus.logged_in()) {
+        window.Taurus.connect.logout(function() {
+          location.href = location.href;
+        });
+      }
+    }, 500);
+  });
+</script>
