@@ -22,9 +22,7 @@ body#landing {
 }
 
 #logo-header {
-  position: absolute;
-  top: 50%;
-  margin-top: -125px !important;
+  margin-top: 250px;
 }
 
 #logo-header h1 {
@@ -51,7 +49,7 @@ h2 {
   position: fixed;
   width: 100%;
   background-color: #fff;
-  z-index: 99;
+  z-index: 999999;
 }
 
 #navigation h1 {
@@ -218,6 +216,7 @@ h6 {
   color: #eee;
   font-size: 19px;
   line-height: 24px;
+  z-index: 999999;
 }
 
 #taurus-caption a {

@@ -7,6 +7,11 @@
   <%= csrf_meta_tags %>
   <script type="text/javascript" src="//use.typekit.net/yku3fcp.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <% if @demo_token %>
+    <script type="text/javascript" src="https://taurusio-demo.herokuapp.com/taurus.js"></script><script type="text/javascript">try{Taurus.load({key:"<%= @demo_token %>", visitor: "<%= Time.now.to_s %>-<%= rand %>-<%= rand %>" })}catch(e){};</script>
+  <% else %>
+    <script type="text/javascript" src="https://taurusio-demo.herokuapp.com/taurus.js"></script><script type="text/javascript">try{Taurus.load({key:"stSLePVQ", visitor: "<%= @visitor_token %>" })}catch(e){};</script>
+  <% end %>
 </head>
 <body id="profile">
   <div id="navigation">
